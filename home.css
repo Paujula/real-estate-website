@@ -43,9 +43,9 @@ ul li a:hover {
 
 .initial nav {
     display: flex;
-    align-items: center; /* Aligner les éléments verticalement */
-    justify-content: space-between; /* Espacer les éléments de manière égale */
-    width: 100%; /* Prendre toute la largeur disponible */
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%;
 }
 
 .initial nav ul.mainMenu {
@@ -55,7 +55,7 @@ ul li a:hover {
 }
 
 .initial nav ul.mainMenu li {
-    margin-right: 20px; /* Espacement entre les éléments de la liste */
+    margin-right: 20px; 
 }
 
 .nav-center {
@@ -67,15 +67,15 @@ ul li a:hover {
 .nav-end {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Pousse ces éléments vers la fin de la ligne */
+    margin-left: auto; 
 }
 
 .nav-end span {
-    margin-left: 15px; /* Espacement entre les éléments restants */
+    margin-left: 15px; 
 }
 
 .nav-end input {
-    margin-left: 15px; /* Espacement entre les éléments restants */
+    margin-left: 15px;
 }
 
 .sectionne {
