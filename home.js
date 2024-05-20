@@ -1,16 +1,18 @@
-<div class="input-container2">
-<div class="inner-input2" >
-    <input type="text" style="width: 300px; height: 100px;">
-    <input type="text">
-    <input type="text">
-    <input type="text">
-</div>
-</div>
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
 
-.input-container2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-  
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+
+function close(){
+    mainMenu.style.top = '-1OO%';
 }

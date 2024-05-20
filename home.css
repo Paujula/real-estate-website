@@ -2,7 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .premier {
@@ -12,7 +14,7 @@ body {
     align-items: flex-end;
 }
 
-.nav-end span:hover{
+.nav-end span:hover {
     color: blue;
 }
 
@@ -132,7 +134,7 @@ ul li a:hover {
 
 .inner-input {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center; 
     width: 700px; 
@@ -140,30 +142,48 @@ ul li a:hover {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    height: 40px;
-    border-radius: 20px;
 }
 
 .inner-input input,
 .inner-input select {
-    height: 30px;
+    height: 40px;
     border-radius: 20px;
-    padding: 0 5px;
+    padding: 0 10px;
     border: 1px solid #ccc;
     box-sizing: border-box; 
+    margin-right: 10px;
+}
+
+.inner-input input:last-child {
+    margin-right: 0;
 }
 
 .inner-input option {
     border-radius: 20px;
 }
 
-.sous-titre{
+.inner-input input[type="text"]:not([placeholder="Search"]) {
+    flex: 2;
+}
+
+.inner-input input[placeholder="Filiere"] {
+    flex: 1;
+}
+
+.inner-input input[placeholder="Search"] {
+    flex: 1;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.sous-titre {
     font-weight: lighter;
     font-size: 13px;
     text-align: center;
 }
 
-.titre{
+.titre {
     text-align: center;
 }
 
@@ -202,7 +222,6 @@ ul li a:hover {
     top: 10px; 
     left: 10px; 
     color: white; 
-    
     padding: 5px;
     border-radius: 5px;
     font-size: 1em;
@@ -218,16 +237,16 @@ ul li a:hover {
     font-size: 1em;
 }
 
-.gallery{
+.gallery {
     padding: 100px 0px 0px 0px;
 }
 
-.roman{
+.roman {
     text-align: center;
     font-size: 1rem;
 }
 
-.lecture{
+.lecture {
     padding: 100px 0px 0px 0px;
 }
 
@@ -253,7 +272,6 @@ ul li a:hover {
     border-radius: 10px;
     width: 140px;
     height: 170px;
-    
 }
 
 .custom-input .value {
@@ -271,148 +289,450 @@ ul li a:hover {
     color: red;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+nav .openMenu{
+    font-size: 1rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
 }
 
-.modifier2 {
-    display: flex;
-    align-items: center;
+.closeMenu{
+    display: none;
 }
 
-.nav2-center2 {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex: 1;
-}
+@media screen and (min-width: 220px) and (max-width: 480px) {
+    body, html {
+        margin: 0;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
 
-.mainMenu2 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-}
+    .premier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.mainMenu2 li {
-    display: inline;
-}
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
-.mainMenu2 li a {
-    text-decoration: none;
-    color: #000;
-    padding: 5px 10px;
-}
+    .nav-center, .nav-end {
+        text-align: center;
+        width: 100%;
+    }
 
-.nav2-end2 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+    .mainMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
-.espace {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
-    width: 90px;
-}
+    .mainMenu li {
+        margin: 5px 0;
+    }
 
-.modifier2 a {
-    text-decoration: none;
-    color: #000;
-}
+    .sectionne, .gallery, .lecture, .input-container, .input-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
-.fa {
-    margin-right: 5px;
-}
+    .input-container .inner-input {
+        flex-wrap: wrap;
+        width: 93%;
+        border-radius: 20px;
+        height: 40px;
+        text-align: center;
+    }
 
-.inner0{
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    text-align: center;
-}
+    .inner-input select, .inner-input input {
+        width: 25%;
+        margin-bottom: 10px;
+    }
 
-.milieu{
-    text-align: center;
-    padding: 150px 0px 0px 0px;
-}
+    .gallery .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.mil{
-    font-weight: normal;
-    text-align: center;
-}
+    .gallery .image-container img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: -150px;
+        padding: 5px;
+        padding: 0px 0px 0px -5px;
+    }
 
-.mile{
-    font-weight: bold;
-    text-align: center;
-}
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+    .lecture .roman, .input-container2 .custom-input {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5Opx; 
+    nav .mainMenu li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .container1 {
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .input-container2.inner-input2.custom-input {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    .row > * {
+        width: 100%;
+    }
+
+    .custom {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .custom h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .custom img {
+        width: 100%;
+    }
+
+    .input-container.inner-input {
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .inner-input input {
+        display: block;
+        width: 100%;
+    }
+      
+    nav .openMenu{  
+        font-size: 1rem;
+        margin: 20px;
+        justify-content: flex-start;
+        padding: 0px 0px 0px 300px;
+       
+        
+    }
+
+    nav .mainMenu{
+        height: 400px;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;    
+        margin-bottom: 10px;
+        
+    }
+
     
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
+
+    nav .mainMenu.openMenu li{
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
 }
 
-.container > div {
-    position: relative;
+@media screen and (min-width: 480px) and (max-width: 734px) {
+    body, html {
+        margin: 0;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
+    .premier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-center, .nav-end {
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mainMenu li {
+        margin: 5px 0;
+    }
+
+    .sectionne, .gallery, .lecture, .input-container, .input-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .input-container .inner-input {
+        flex-wrap: wrap;
+        width: 93%;
+        border-radius: 20px;
+        height: 40px;
+        text-align: center;
+    }
+
+    .inner-input select, .inner-input input {
+        width: 25%;
+        margin-bottom: 10px;
+    }
+
+    .gallery .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery .image-container img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: -150px;
+        padding: 5px;
+        padding: 0px 0px 0px -5px;
+    }
+
+    .lecture .roman, .input-container2  {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    nav .mainMenu li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .container1 {
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .custom-input span,h3,h5{
+        text-align: center;
+    }
+
+    .icon{
+        justify-content: flex-start;
+        padding: 0px 0px 0px 150px;
+    }
+
 }
 
-.container input[type="text"] {
-    width: 390px;
-    height: 50px;
-    border-radius: 50px;
-    padding-left: 30px;
-    padding-right: 100px;
-}
+@media screen and (min-width: 734px) and (max-width: 1024px) {
+    body, html {
+        margin: 0;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
 
-.icone {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: yellow;
-    border-radius: 50px;
-    padding: 10px;
-    text-align: center;
-    width: 55px;
-    height: 30px;
-}
+    .premier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.icone i {
-    font-size: 20px;
-    color: black;
-}
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
-.parent {
-    display: flex;
-    justify-content: center; 
+    .nav-center, .nav-end {
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mainMenu li {
+        margin: 5px 0;
+    }
+
+    .sectionne, .gallery, .lecture, .input-container, .input-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .input-container .inner-input {
+        flex-wrap: wrap;
+        width: 93%;
+        border-radius: 20px;
+        height: 40px;
+        text-align: center;
+    }
+
+    .inner-input select, .inner-input input {
+        width: 25%;
+        margin-bottom: 10px;
+    }
+
+    .gallery .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     
+
+    .tool{
+        width: 3000px;
+        height: 300px;
+    }
+
+    .lecture .roman, .input-container2  {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    nav .mainMenu li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .container1 {
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .custom-input span,h3,h5{
+        text-align: center;
+    }
+
+    .icon{
+        justify-content: flex-start;
+        padding: 0px 0px 0px 400px;
+    }
+
+    nav .openMenu{  
+        font-size: 1rem;
+        margin: 20px;
+        justify-content: flex-start;
+        padding: 0px 0px 0px 300px;
+       
+        
+    }
+
+    nav .mainMenu{
+        height: 400px;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;    
+        margin-bottom: 10px;
+        
+    }
+
+    
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
+
+    nav .mainMenu.openMenu li{
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    
+
+}
   
-}
-
-.parent input[type="text"] {
-    width: 100px;
-    height: 30px;
-    border-radius: 20px;
-    margin-right: 10px; 
-    text-align: center;
-}
-
-.fils{
-    background-image: url('img/Pauj22.png');
-
-}
-
