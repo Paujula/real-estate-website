@@ -412,6 +412,158 @@ span h5.cherie {
 
 
 @media screen and (min-width: 220px) and (max-width: 480px) {
+
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0; 
+    }
+
+    
+    nav .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.75rem;
+       
+    }
+
+    .project {
+        width: 100%;
+        margin-right: 0;
+        justify-content: flex-start;
+        padding: 0px 40px 0px 0px;
+        
+    }
+ 
+    .icon{
+        display: block;
+    }
+    
+    nav .mainMenu{
+        height: 400px;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
+
+    .essaie {
+        display: none;
+    }
+    
+    .nav-end {
+        flex-direction: column;    
+    }
+    
+    .gallery .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container .inner-input {
+        flex-wrap: wrap;
+        width: 90%;
+        border-radius: 20px;
+        height: 18px;
+        text-align: center;
+    }
+
+    .inner-input input {
+        width: 35px;
+        height: 20px;
+        font-size: 10px;
+        padding: 0px 15px 0px 0px;
+
+    }
+
+    .inner-input select {
+        width: 30%;
+        height: 20px;
+        font-size: 10px;
+        padding: 0px 15px 0px 0px;
+    }
+
+    .sectionne, .gallery, .lecture, .input-container, .input-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .modifier i{
+        top: 3px;
+    }
+
+    .sectionne{
+        margin-top: -130px;
+    }
+    
+    .project {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0;
+        margin-right: 300px;
+    }
+
+    .image-container {
+        margin-bottom: 5px;
+    }
+
+    .input-container2 {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-top: 20px; 
+        margin-left: 30px;
+
+    }
+
+    .lecture{
+        margin-top: -200px;
+    }
+
+    .image-container img {
+        width: 170px;
+        height: 190px;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 734px) {
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0; 
+    }
+
+    
     nav .mainMenu li a {
         display: inline-block;
         padding: 15px;
@@ -479,15 +631,171 @@ span h5.cherie {
 
     .input-container .inner-input {
         flex-wrap: wrap;
-        width: 98%;
+        width: 92%;
         border-radius: 20px;
-        height: 40px;
+        height: 38px;
         text-align: center;
     }
 
-    .inner-input select, .inner-input input {
-        width: 25%;
+    .inner-input input {
+        width: 35px;
+        height: 30px;
+        font-size: 10px;
+        padding: 0px 15px 0px 0px;
+
+    }
+
+    .inner-input select {
+        width: 30%;
+        height: 30px;
+        font-size: 10px;
+        padding: 0px 15px 0px 0px;
+    }
+
+    .sectionne, .gallery, .lecture, .input-container, .input-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .modifier i{
+        top: 3;
+        display: none;
+    }
+
+    .sectionne{
+        margin-top: -230px;
+    }
+    
+    .project {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0;
+        margin-right: 300px;
+    }
+
+    .image-container {
+        margin-bottom: 5px;
+    }
+
+    .input-container2 {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-top: 20px; 
+        margin-left: 90px;
+
+    }
+
+    .lecture{
+        margin-top: -200px;
+    }
+
+    .image-container img {
+        width: 420px;
+        height: 360px;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (min-width: 734px) and (max-width: 1024px) {
+
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0; 
+    }
+
+    nav .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.75rem;
+       
+    }
+
+    .project {
+        width: 100%;
+        margin-right: 0;
+        justify-content: flex-start;
+        padding: 0px 40px 0px 0px;
         
+    }
+ 
+    .icon{
+        display: block;
+    }
+    
+    nav .mainMenu{
+        height: 500px;
+        width: 300px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+        margin-bottom: 10px;
+        margin-top: 60px;
+       
+    }
+
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
+
+    .essaie {
+        display: none;
+    }
+    
+    .nav-end {
+        flex-direction: column;    
+    }
+    
+    .gallery .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container .inner-input {
+        flex-wrap: wrap;
+        width: 90%;
+        border-radius: 20px;
+        height: 38px;
+        text-align: center;
+    }
+
+    .inner-input input {
+        width: 55px;
+        height: 40px;
+        font-size: 10px;
+        padding: 0px 15px 0px 0px;
+
+    }
+
+    .inner-input select {
+        width: 30%;
+        height: 40px;
+        font-size: 10px;
+        padding: 0px 15px 0px 0px;
     }
 
     .sectionne, .gallery, .lecture, .input-container, .input-container2 {
@@ -499,6 +807,44 @@ span h5.cherie {
 
     .modifier i{
         top: 3px;
+        margin-left: 750px;
+        display: none;
+    }
+
+    .sectionne{
+        margin-top: -400px;
     }
     
-}  
+    .project {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0;
+        margin-right: 300px;
+    }
+
+    .image-container {
+        margin-bottom: 5px;
+        
+    }
+
+    .input-container2 {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-top: 20px; 
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .lecture{
+        margin-top: -200px;
+    }
+
+    .image-container img {
+        width: 620px;
+        height: 560px;
+        border-radius: 35px;
+    }
+}
