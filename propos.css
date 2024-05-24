@@ -145,3 +145,107 @@ body, html {
 
 }
 
+ h3{
+    text-align: center;
+}
+
+.vert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vert > span {
+    display: flex;
+    align-items: center;
+    margin: 0 60px; 
+}
+
+.vert > *:not(span) {
+    margin: 0 60px; 
+}
+
+.vert-initial{
+    background-color: green;
+    margin-top: -18px;
+}
+
+.vert-final{
+    font-weight: bold;
+    text-align: center;
+}
+
+.final{
+    text-align: center;
+}
+
+.propos {
+    display: flex;
+    justify-content: center;
+}
+
+.galerie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; 
+}
+
+.galerie img {
+    width: 30%; 
+    max-width: 300px; 
+    border-radius: 20px;
+}
+
+.galerie ol{
+    font-size: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.galerie ol li{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.galerie ol h3{
+    font-size: 1rem;
+}
+
+.facture{
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: 100px;
+}
+
+.facture h1{
+    font-weight: bold;
+}
+
+.input-container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-input {
+    display: flex;
+    text-align: center;
+}
+
+.custom-input {
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin: 10px;
+    padding: 10px;
+}
+
+.custom-input span {
+    display: flex;
+    align-items: center;
+}
+
+.custom-input i {
+    margin-right: 25px; 
+}
+
+
