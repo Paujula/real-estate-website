@@ -429,14 +429,6 @@ span h5.cherie {
         font-size: 1.75rem;
        
     }
-
-    .project {
-        width: 100%;
-        margin-right: 0;
-        justify-content: flex-start;
-        padding: 0px 40px 0px 0px;
-        
-    }
  
     .icon{
         display: block;
@@ -487,23 +479,23 @@ span h5.cherie {
 
     .input-container .inner-input {
         flex-wrap: wrap;
-        width: 90%;
+        width: 85%;
         border-radius: 20px;
-        height: 18px;
+        height: 158px;
         text-align: center;
+        margin-top: -30px;
     }
 
     .inner-input input {
-        width: 35px;
-        height: 20px;
+        width: 105px;
+        height: 30px;
         font-size: 10px;
-        padding: 0px 15px 0px 0px;
 
     }
 
     .inner-input select {
-        width: 30%;
-        height: 20px;
+        width: 130%;
+        height: 30px;
         font-size: 10px;
         padding: 0px 15px 0px 0px;
     }
@@ -528,7 +520,7 @@ span h5.cherie {
         flex-direction: column; 
         align-items: flex-start; 
         padding: 0;
-        margin-right: 300px;
+        margin-right: 270px;
     }
 
     .image-container {
@@ -550,9 +542,11 @@ span h5.cherie {
     }
 
     .image-container img {
-        width: 170px;
+        width: 190px;
         height: 190px;
         border-radius: 25px;
+        text-align: center;
+       
     }
 }
 
@@ -573,14 +567,6 @@ span h5.cherie {
         font-size: 1.75rem;
        
     }
-
-    .project {
-        width: 100%;
-        margin-right: 0;
-        justify-content: flex-start;
-        padding: 0px 40px 0px 0px;
-        
-    }
  
     .icon{
         display: block;
@@ -588,7 +574,7 @@ span h5.cherie {
     
     nav .mainMenu{
         height: 500px;
-        width: 200px;
+        width: 300px;
         position: fixed;
         top: 0;
         left: 0;
@@ -631,23 +617,24 @@ span h5.cherie {
 
     .input-container .inner-input {
         flex-wrap: wrap;
-        width: 92%;
+        width: 52%;
         border-radius: 20px;
-        height: 38px;
+        height: 238px;
         text-align: center;
+        margin-top: 30px;
     }
 
     .inner-input input {
-        width: 35px;
-        height: 30px;
+        width: 205px;
+        height: 40px;
         font-size: 10px;
         padding: 0px 15px 0px 0px;
 
     }
 
     .inner-input select {
-        width: 30%;
-        height: 30px;
+        width: 100%;
+        height: 40px;
         font-size: 10px;
         padding: 0px 15px 0px 0px;
     }
@@ -665,7 +652,7 @@ span h5.cherie {
     }
 
     .sectionne{
-        margin-top: -230px;
+        margin-top: -130px;
     }
     
     .project {
@@ -673,7 +660,7 @@ span h5.cherie {
         flex-direction: column; 
         align-items: flex-start; 
         padding: 0;
-        margin-right: 300px;
+        margin-right: 260px;
     }
 
     .image-container {
@@ -719,14 +706,6 @@ span h5.cherie {
        
     }
 
-    .project {
-        width: 100%;
-        margin-right: 0;
-        justify-content: flex-start;
-        padding: 0px 40px 0px 0px;
-        
-    }
- 
     .icon{
         display: block;
     }
@@ -777,23 +756,23 @@ span h5.cherie {
 
     .input-container .inner-input {
         flex-wrap: wrap;
-        width: 90%;
+        width: 40%;
         border-radius: 20px;
-        height: 38px;
+        height: 238px;
         text-align: center;
     }
 
     .inner-input input {
-        width: 55px;
-        height: 40px;
+        width: 255px;
+        height: 50px;
         font-size: 10px;
         padding: 0px 15px 0px 0px;
 
     }
 
     .inner-input select {
-        width: 30%;
-        height: 40px;
+        width: 230%;
+        height: 50px;
         font-size: 10px;
         padding: 0px 15px 0px 0px;
     }
@@ -812,7 +791,7 @@ span h5.cherie {
     }
 
     .sectionne{
-        margin-top: -400px;
+        margin-top: -250px;
     }
     
     .project {
@@ -820,7 +799,8 @@ span h5.cherie {
         flex-direction: column; 
         align-items: flex-start; 
         padding: 0;
-        margin-right: 300px;
+        margin-right: 270px;
+      
     }
 
     .image-container {
@@ -844,7 +824,16 @@ span h5.cherie {
 
     .image-container img {
         width: 620px;
-        height: 560px;
+        height: 600px;
         border-radius: 35px;
+    }
+
+    .text-overlay {
+        font-size: 3em;
+    }
+    
+    .merci {
+        font-size: 2em;
+        margin-top: 30px;
     }
 }
