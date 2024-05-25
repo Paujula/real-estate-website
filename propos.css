@@ -1,14 +1,9 @@
-
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px;
-}
-
-.modifier2 {
-    display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 .nav2-center2 {
@@ -18,7 +13,33 @@ nav {
     flex: 1;
 }
 
-.mainMenu2 {
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+    
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 0.75rem;
+}
+
+nav .mainMenu li a:hover{
+    background: rgb 255,94,0;
+}
+
+nav .openMenu{
+    font-size: 1rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.mainMenu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -26,20 +47,19 @@ nav {
     gap: 15px;
 }
 
-.mainMenu2 li {
+.mainMenu li {
     display: inline;
 }
 
-.mainMenu2 li a {
+.mainMenu li a {
     text-decoration: none;
     color: #000;
     padding: 5px 10px;
 }
 
-.nav2-end2 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.nav-end2{
+    margin-left: 980px;
+    margin-top: -30px;
 }
 
 .espace {
@@ -80,10 +100,11 @@ nav {
     font-weight: bold;
     text-align: center;
 }
+
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
+
 }
 
 .container {
@@ -214,38 +235,437 @@ body, html {
 
 .facture{
     text-align: center;
-    background-color: whitesmoke;
+   
     margin-top: 100px;
+}
+
+.facteur{
+    background-color: whitesmoke;
+   
+
 }
 
 .facture h1{
     font-weight: bold;
 }
 
-.input-container2 {
-    display: flex;
-    justify-content: center;
-}
-
-.inner-input {
-    display: flex;
-    text-align: center;
-}
-
-.custom-input {
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    margin: 10px;
-    padding: 10px;
+.facture h1{
+    font-weight: bold;
 }
 
 .custom-input span {
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .custom-input i {
     margin-right: 25px; 
+    
+}
+
+.openMenu{
+    display: none;
+}
+
+@media screen and (min-width: 220px) and (max-width: 480px) {
+
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0; 
+    }
+
+    
+    nav .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.25rem;
+       
+    }
+ 
+    .icon{
+        display: block;
+        margin-top: -65px;
+        margin-right: 180px;
+    }
+    
+.modifier2{
+    display: block;
+    margin-left: 190px;
+    padding: 20px 0px 0px 0px;
+   
+}
+
+    nav .mainMenu{
+        height: 400px;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+    
+    nav .openMenu{
+        display: block;
+    }
+
+    .essaie {
+        display: none;
+    }
+    
+    .nav-end {
+        flex-direction: column;    
+    }
+
+        .milieu{
+            margin-top: -250px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5Opx; 
+            
+        }
+        
+        .container > div {
+            position: relative;
+        }
+        
+        .container input[type="text"] {
+            width: 80px;
+            height: 30px;
+            border-radius: 30px;
+            padding-left: 30px;
+            padding-right: 100px;
+        }
+
+        .icone {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: yellow;
+            border-radius: 30px;
+            padding: 10px;
+            text-align: center;
+            width: 25px;
+            height: 15px;
+        }
+        
+        .icone i {
+            font-size: 20px;
+            color: black;
+        }
+        
+        .parent {
+            display: inline-block;
+            justify-content: center; 
+            text-align: center;
+          
+        }
+        
+        .parent input[type="text"] {
+            width: 190px;
+            height: 30px;
+            border-radius: 20px;
+            margin-right: 10px; 
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .vert > span {
+            display: flex;
+            align-items: center;
+            margin: 0 60px; 
+        }
+        
+        .vert > *:not(span) {
+            margin: 0 60px; 
+        }
+        
+        .vert-initial{
+            background-color: green;
+            margin-top: -18px;
+        }
+        
+        .vert-final{
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .vert{
+            display: inline-block;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        
+.propos {
+    display: inline-block;
+    justify-content: center;
+}
+
+.galerie {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; 
+}
+
+.galerie img {
+    width: 30%; 
+    max-width: 300px; 
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+.galerie ol{
+    font-size: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.galerie ol li{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.galerie ol h3{
+    font-size: 1rem;
+}
+
+.facture h1{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.input-container.inner-input.custom-input span {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.custom-input i {
+    margin-right: 25px; 
+    
 }
 
 
+}
+
+@media screen and (min-width: 480px) and (max-width: 734px) {
+
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0; 
+    }
+
+    
+    nav .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.25rem;
+       
+    }
+ 
+    .icon{
+        display: block;
+        margin-top: -70px;
+        margin-right: 380px;
+    }
+    
+    .modifier2{
+        display: block;
+        margin-left: 450px;
+        padding: 40px 0px 0px 0px;
+    
+    }
+
+    nav .mainMenu{
+        height: 400px;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+    
+    nav .openMenu{
+        display: block;
+    }
+
+    .essaie {
+        display: none;
+    }
+    
+    .nav-end {
+        flex-direction: column;    
+    }
+
+        .milieu{
+            margin-top: -250px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5Opx; 
+            
+        }
+        
+        .container > div {
+            position: relative;
+        }
+        
+        .container input[type="text"] {
+            width: 80px;
+            height: 30px;
+            border-radius: 30px;
+            padding-left: 30px;
+            padding-right: 100px;
+        }
+
+        .icone {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: yellow;
+            border-radius: 30px;
+            padding: 10px;
+            text-align: center;
+            width: 25px;
+            height: 15px;
+        }
+        
+        .icone i {
+            font-size: 20px;
+            color: black;
+        }
+        
+        .parent {
+            display: inline-block;
+            justify-content: center; 
+            text-align: center;
+          
+        }
+        
+        .parent input[type="text"] {
+            width: 190px;
+            height: 30px;
+            border-radius: 20px;
+            margin-right: 10px; 
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .vert > span {
+            display: flex;
+            align-items: center;
+            margin: 0 60px; 
+        }
+        
+        .vert > *:not(span) {
+            margin: 0 60px; 
+        }
+        
+        .vert-initial{
+            background-color: green;
+            margin-top: -18px;
+        }
+        
+        .vert-final{
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .vert{
+            display: inline-block;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        
+.propos {
+    display: inline-block;
+    justify-content: center;
+}
+
+.galerie {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; 
+}
+
+.galerie img {
+    width: 30%; 
+    max-width: 300px; 
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+.galerie ol{
+    font-size: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.galerie ol li{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.galerie ol h3{
+    font-size: 1rem;
+}
+
+.facture h1{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.input-container.inner-input.custom-input span {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.custom-input i {
+    margin-right: 25px; 
+    
+}
+
+
+}
