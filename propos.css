@@ -4,6 +4,7 @@ nav {
     align-items: center;
     padding: 10px;
     text-align: center;
+    margin-top: -59px;
 }
 
 .nav2-center2 {
@@ -25,7 +26,7 @@ nav .mainMenu li a {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 }
 
 nav .mainMenu li a:hover{
@@ -59,7 +60,8 @@ nav .openMenu{
 
 .nav-end2{
     margin-left: 980px;
-    margin-top: -30px;
+    margin-top: -45px;
+   
 }
 
 .espace {
@@ -268,6 +270,50 @@ body, html {
     display: none;
 }
 
+.modifier2{
+    margin: 20px;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.inner-input {
+    display: contents;
+}
+
+.custom-input {
+    background-color: #f0f0f0; 
+    
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.custom-input span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-input span i {
+    margin-right: 10px; 
+}
+
+.custom-input h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.custom-input h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
 @media screen and (min-width: 220px) and (max-width: 480px) {
 
     html, body {
@@ -289,215 +335,14 @@ body, html {
  
     .icon{
         display: block;
-        margin-top: -65px;
+        margin-top: -25px;
         margin-right: 180px;
-    }
-    
-.modifier2{
-    display: block;
-    margin-left: 190px;
-    padding: 20px 0px 0px 0px;
-   
-}
-
-    nav .mainMenu{
-        height: 400px;
-        width: 200px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: black;
-        transition: top 1s ease;
-        display: none;
-        margin-bottom: 10px;
-        margin-top: 50px;
-    }
-    
-    nav .openMenu{
-        display: block;
-    }
-
-    .essaie {
-        display: none;
-    }
-    
-    .nav-end {
-        flex-direction: column;    
-    }
-
-        .milieu{
-            margin-top: -250px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 5Opx; 
-            
-        }
-        
-        .container > div {
-            position: relative;
-        }
-        
-        .container input[type="text"] {
-            width: 80px;
-            height: 30px;
-            border-radius: 30px;
-            padding-left: 30px;
-            padding-right: 100px;
-        }
-
-        .icone {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: yellow;
-            border-radius: 30px;
-            padding: 10px;
-            text-align: center;
-            width: 25px;
-            height: 15px;
-        }
-        
-        .icone i {
-            font-size: 20px;
-            color: black;
-        }
-        
-        .parent {
-            display: inline-block;
-            justify-content: center; 
-            text-align: center;
-          
-        }
-        
-        .parent input[type="text"] {
-            width: 190px;
-            height: 30px;
-            border-radius: 20px;
-            margin-right: 10px; 
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .vert > span {
-            display: flex;
-            align-items: center;
-            margin: 0 60px; 
-        }
-        
-        .vert > *:not(span) {
-            margin: 0 60px; 
-        }
-        
-        .vert-initial{
-            background-color: green;
-            margin-top: -18px;
-        }
-        
-        .vert-final{
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .vert{
-            display: inline-block;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        
-.propos {
-    display: inline-block;
-    justify-content: center;
-}
-
-.galerie {
-    display: inline-block;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px; 
-}
-
-.galerie img {
-    width: 30%; 
-    max-width: 300px; 
-    border-radius: 20px;
-    text-align: center;
-    margin-left: 80px;
-    margin-bottom: 10px;
-}
-
-.galerie ol{
-    font-size: 10px;
-    text-align: center;
-    font-weight: normal;
-}
-
-.galerie ol li{
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.galerie ol h3{
-    font-size: 1rem;
-}
-
-.facture h1{
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.input-container.inner-input.custom-input span {
-    display: inline-block;
-    align-items: center;
-    text-align: center;
-}
-
-.custom-input i {
-    margin-right: 25px; 
-    
-}
-
-
-}
-
-@media screen and (min-width: 480px) and (max-width: 734px) {
-
-    html, body {
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0; 
-    }
-
-    
-    nav .mainMenu li a {
-        display: inline-block;
-        padding: 15px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        font-size: 1.25rem;
-       
-    }
- 
-    .icon{
-        display: block;
-        margin-top: -70px;
-        margin-right: 380px;
     }
     
     .modifier2{
         display: block;
-        margin-left: 450px;
-        padding: 40px 0px 0px 0px;
+        margin-left: 190px;
+        padding: 3px 0px 0px 0px;
     
     }
 
@@ -531,7 +376,7 @@ body, html {
     }
 
         .milieu{
-            margin-top: -250px;
+            margin-top: -150px;
         }
 
         .container {
@@ -666,6 +511,12 @@ body, html {
     margin-right: 25px; 
     
 }
+.inner-input {
+    display: inline-block;
+}
+
 
 
 }
+
+
