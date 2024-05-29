@@ -46,6 +46,7 @@ nav .openMenu{
     padding: 0;
     display: flex;
     gap: 15px;
+   
 }
 
 .mainMenu li {
@@ -266,10 +267,6 @@ body, html {
     
 }
 
-.openMenu{
-    display: none;
-}
-
 .modifier2{
     margin: 20px;
 }
@@ -314,15 +311,21 @@ body, html {
     color: #555;
 }
 
-@media screen and (min-width: 220px) and (max-width: 480px) {
 
+@media only screen and (max-width: 600px) {
     html, body {
         overflow-x: hidden;
         margin: 0;
         padding: 0; 
     }
-
     
+    .cont {
+        overflow: hidden;
+        overflow-x: hidden;
+
+    }
+    
+
     nav .mainMenu li a {
         display: inline-block;
         padding: 15px;
@@ -376,7 +379,9 @@ body, html {
     }
 
         .milieu{
-            margin-top: -150px;
+           text-align: center;
+           align-items: center;
+           margin-top: -200px;
         }
 
         .container {
@@ -441,11 +446,13 @@ body, html {
         
         .vert > *:not(span) {
             margin: 0 60px; 
+            margin-bottom: 20px;
         }
         
         .vert-initial{
             background-color: green;
-            margin-top: -18px;
+            text-align: center;
+            align-items: center;
         }
         
         .vert-final{
@@ -457,6 +464,7 @@ body, html {
             display: inline-block;
             margin-bottom: 20px;
             text-align: center;
+            align-items: center;
         }
 
         
@@ -479,6 +487,7 @@ body, html {
     text-align: center;
     margin-left: 80px;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .galerie ol{
@@ -505,18 +514,83 @@ body, html {
     display: inline-block;
     align-items: center;
     text-align: center;
+  
 }
 
-.custom-input i {
-    margin-right: 25px; 
-    
-}
 .inner-input {
     display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.custom-input {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inner-input {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.custom-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0; 
+}
+
+.custom-input span {
+    display: flex;
+    align-items: center;
+}
+
+.custom-input h2 {
+    margin-left: 5px;
+}
+
+.custom-input h3 {
+    margin-top: 5px; 
+}
+
+/* Styles pour centrer les conteneurs */
+.propos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galerie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+.galerie img {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%;
+    height: auto;
+}
+
+.galerie li, .galerie h3, .galerie h4 {
+    margin: 15px 0;
 }
 
 
-
 }
-
-
