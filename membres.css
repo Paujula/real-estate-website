@@ -206,38 +206,39 @@ select[name="type-option"] option {
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    height: 50px;
-    border-radius: 20px;
-    
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 select[name="type-option"] {
     width: 100px;
-    height: 40px;
+    height: 70px;
     border-radius: 20px;
     margin-top: 5px;
-
+    border: none;
 }
 
 .search-container input[type="text"] {
     width: 130px; 
-    height: 40px;
+    height: 65px;
     border-radius: 20px;
     margin-top: 5px;
+    border: none;
 }
 
 input[type="text"][placeholder="Filter"] {
     width: 100px;
     border-radius: 20px;
-    height: 42px;
+    height: 72px;
     margin-top: 5px;
 
 }
 
 input[type="text"][placeholder="Search"] {
-    width: 130px;
+    width: 20px;
     border-radius: 20px;
-    height: 42px;
+    height: 72px;
     margin-top: 5px;
     background-color: chocolate;
 }
@@ -246,3 +247,275 @@ input[type="text"][placeholder="Search"] {
 .inner-input > input[type="text"] {
     margin-right: 15px;
 }
+
+.merci{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.merci input{
+    border-radius: 50px;
+    text-align: center;
+    width: 120px;
+}
+
+.enfant-merci{
+     border: none;
+     font-weight: bold;
+     
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightblue;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.explore {
+    text-align: right;
+    margin-top: -15px;
+   
+}
+
+.explore .btn {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.explore .btn:hover {
+    background-color: goldenrod;
+}
+
+.explore .btn span {
+    margin-left: 5px;
+}
+
+.bon {
+    display: flex;
+}
+
+.bon h6 {
+    margin: 0; 
+    margin-right: 900px; 
+}
+
+.explore .btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit;
+    
+}
+
+.explore .btn span {
+    margin-left: 8px;    
+}
+
+.bonjour{
+    margin-top: 130px;
+}
+
+.bon h6{
+    font-weight: normal;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh; 
+   margin-top: 40px;
+}
+
+.corps {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap; 
+    width: 1100px; 
+    height: 70px; 
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 220px; 
+    height: 50px;
+}
+
+.item img {
+    max-width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.description {
+    max-width: 200px;
+}
+
+.description h5 {
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.facture{
+    margin-top: -370px;
+}
+
+.bic {
+    display: flex;
+}
+
+.ecriture {
+    margin-left: 850px;
+}
+
+.ecriture {
+    display: flex; 
+    align-items: center;
+  
+}
+
+.ecriture h6 {
+    margin-right: 30px;
+}
+
+.ecriture input[type="text"] {
+    margin-right: 10px; 
+    font-size: 10px; 
+    padding: 5px;
+    text-align: center;
+    width: 70px;
+    border-radius: 20px;
+}
+
+.fils-ecriture{
+    border: none;
+}
+
+.fille-ecriture{
+    border: none;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.thank {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 30px;
+    left: 115px; 
+    width: 90px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+.text-overlay,
+.thank {
+    position: absolute;
+    color: white;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.text-overlay {
+    top: 10px;
+    left: 10px;
+    background-color: green;
+}
+
+.thank {
+    top: 10px;
+    right: 10px;
+    width: 90px;
+    text-align: center;
+    background-color: chocolate;
+}
+
+.row1 .image-container,
+.row2 .image-container {
+    flex: 1;
+    margin: 0 5px; 
+}
+
+.row1  .project {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.row1 .image-container {
+    flex: 1; 
+    margin-right: 20px;
+}
+
+.row2 .project {
+    display: flex; 
+    justify-content: space-between; 
+  
+  
+}
+
+.row2 .image-container {
+    flex: 1; 
+    margin-right: 20px;
+}
+
+.image-container {
+    width: 400px; 
+    overflow: hidden; 
+}
+
+.image-container img {
+    width: 400px;
+    height: 300px; 
+    display: block; 
+    border-radius: 20px;
+}
+
+.prix{
+    color: red;
+    margin-left: 200px;
+}
+
+.ligne3{
+    margin-right: 20px;
+}
+
