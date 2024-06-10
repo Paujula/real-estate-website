@@ -5,6 +5,10 @@
     padding: 10px;
 }
 
+.membres{
+    background-image: url('img/po22.avif');
+
+}
 .sous-membre {
     display: flex;
     width: 100%;
