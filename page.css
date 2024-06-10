@@ -1,0 +1,118 @@
+.page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.pages{
+    background-image: url('img/po22.avif');
+
+}
+.sous-page {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.openMenu {
+    display: none; 
+}
+
+.mainMenu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainMenu li {
+    margin: 0 10px;
+}
+
+.mainMenu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.mainMenu li a:hover {
+    color: blue;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center .modifier {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center .modifier a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.nav-center .modifier h5 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.nav-end {
+    display: flex;
+    align-items: center;
+}
+
+.nav-end .baba {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-end .baba i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.nav-end .baba h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+.have {
+    display: flex;
+    align-items: center;
+    
+}
+
+.have .bobo {
+    margin-right: 10px;
+    font-size: 24px;
+    
+}
+
+.espace {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.essaie{
+    font-weight: normal;
+}

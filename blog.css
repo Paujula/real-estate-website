@@ -1,0 +1,401 @@
+.take{
+    color: white;
+    background-color: black;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.blogs{
+    background-color: black;
+}
+.sous-blog {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.openMenu {
+    display: none; 
+}
+
+.mainMenu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainMenu li {
+    margin: 0 10px;
+}
+
+.mainMenu li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.mainMenu li a:hover {
+    color: blue;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center .modifier {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center .modifier a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.nav-center .modifier h5 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.nav-end {
+    display: flex;
+    align-items: center;
+}
+
+.nav-end .baba {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: white;
+}
+
+.nav-end .baba i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.nav-end .baba h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+.have {
+    display: flex;
+    align-items: center;
+    
+}
+
+.have .bobo {
+    margin-right: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.espace {
+    padding: 5px 10px;
+    border: white;
+    border-radius: 13px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.essaie{
+    font-weight: normal;
+}
+
+.lorem{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.high{
+    color: yellow;
+}
+
+.dolor{
+    font-weight: normal;
+}
+
+.dolore{
+    display: flex;
+    gap: 20px;
+   
+}
+
+.blog-input{
+    display: flex;
+    gap: 20px;background-color: white;
+}
+
+
+
+.blog-input > * {
+    flex: 1;
+    margin: 0;
+    padding: 0 10px; 
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 100%; 
+}
+
+.blog-container {
+    position: relative;
+    flex: 1;
+    width: auto; 
+}
+
+.blog-container input[type="text"] {
+    padding: 0 10px;  
+}
+
+
+select[name="blog-option"] option {
+    font-size: 16px;
+}
+
+.blog-input {
+    display: flex;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+select[name="blog-option"] {
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+    font-size: 8px;
+}
+
+.blog-container input[type="text"] {
+    width: 100px; 
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 5px;
+    border: none;
+}
+
+input[type="text"][placeholder="Filter"] {
+    width: 100px;
+    border-radius: 20px;
+    height: 42px;
+    margin-top: 5px;
+
+}
+
+input[type="text"][placeholder="Search"] {
+    width: 20px;
+    border-radius: 20px;
+    height: 42px;
+    margin-top: 5px;
+    background-color: chocolate;
+}
+
+.blog-input > select,
+.blog-input > input[type="text"] {
+    margin-right: 15px;
+}
+
+.stylo{
+    display: flex;
+}
+
+.soso{
+    margin-top: 20px;
+}
+
+.soso1 {
+    background-image: url('img/po01\ \(1\).jpg');
+    background-size: cover; 
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.soso2 {
+    background-image: url('img/po14.avif');
+    background-size: cover; 
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.soso3 {
+    background-image: url('img/po01\ \(3\).jpg');
+    background-size: cover; 
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.set{
+    margin-top: 15px;
+    margin-left: 30px;
+    color: white;
+}
+
+.myphoto img{
+    width: 600px;
+    height: 400px;
+    margin-left: 650px;
+    margin-top: -350px;
+}
+
+
+.good {
+    display: flex;
+    justify-content: center;
+}
+
+.goode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; 
+}
+
+.goode i {
+    height: 80px; 
+    width: 80px; 
+    background-color: peru;
+    font-size: 24px; 
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.goode ol{
+    font-size: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.goode ol li{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.goode ol h3{
+    font-size: 1rem;
+}
+
+.close{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.closing{
+    margin-top: 90px;
+}
+
+.facte-input {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    width: 170px;
+    height: 100px;
+    text-align: center;
+}
+
+.fact-input {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.facte-input {
+    flex: 1; 
+    margin-right: 10px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightblue;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.explore {
+    text-align: right;
+    margin-top: -15px;
+   
+}
+
+.explore .btn {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.explore .btn:hover {
+    background-color: goldenrod;
+}
+
+.explore .btn span {
+    margin-left: 5px;
+}
+
+.bon {
+    display: flex;
+}
+
+.bon h6 {
+    margin: 0; 
+    margin-right: 900px; 
+}
+
+.explore .btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit;
+    
+}
+
+.explore .btn span {
+    margin-left: 8px;    
+}
+
+.factor{
+    margin-top: 50px;
+}
+
+.god{
+    background-color: whitesmoke;
+    margin-top: 200px;
+}
+
